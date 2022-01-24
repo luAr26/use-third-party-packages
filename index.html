@@ -4,11 +4,246 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLES -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- SCRIPTS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="/js/main.js" defer></script>
     <title>Demo Website</title>
   </head>
   <body>
-    <h1>Third Party packages</h1>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="carousel-example"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel-example"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-example"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel-example"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/berries.jpg"
+              class="d-block w-100"
+              alt="Berries"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/images/christmas.jpg"
+              class="d-block w-100"
+              alt="Christmas"
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="/images/tasty.jpg" class="d-block w-100" alt="Tasty" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-example"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-example"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="newsletter-signup">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              name="email"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+              name="stay-informed"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Keep me informed</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
+      <section id="dummy-text">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque est
+          fugit fuga minima, nisi quaerat inventore reiciendis officia culpa
+          quia omnis magnam repudiandae. Rerum eius quasi id quis voluptatem hic
+          maxime sint, tempore unde accusantium.
+        </p>
+        <p>
+          Repudiandae enim consectetur pariatur laudantium asperiores nesciunt,
+          fugiat ea recusandae sit beatae vitae quam aut consequatur suscipit
+          amet reiciendis praesentium quae molestiae nam ex aperiam dolorem!
+          Laudantium doloremque sunt labore esse quas dolores, dolorum
+          perferendis?
+        </p>
+        <p>
+          Dolore corporis eius, quae velit nulla cupiditate commodi explicabo
+          ullam ipsa. Illo culpa nostrum explicabo laborum dolores sint fugit,
+          vitae temporibus iste recusandae quod facilis commodi omnis alias
+          cupiditate suscipit asperiores exercitationem aut quasi magnam.
+        </p>
+        <p>
+          Ea, maxime provident reprehenderit veritatis recusandae cum ipsa
+          facere alias tenetur dolores voluptatum delectus placeat nemo laborum,
+          neque totam, non nisi officia minima! Provident exercitationem ducimus
+          possimus qui animi delectus laboriosam nisi? Velit, unde maxime?
+        </p>
+        <p>
+          Corporis, magni quidem? Optio aperiam laudantium quia neque adipisci,
+          ea impedit hic? Hic placeat exercitationem quasi corporis, dolorem
+          odio ducimus. Saepe, excepturi, dolores delectus obcaecati nulla totam
+          exercitationem minima illo amet placeat ea rerum laboriosam!
+        </p>
+        <p>
+          Officia, libero dolore quaerat amet inventore iure aspernatur,
+          expedita officiis illum quis aperiam, sequi quia laudantium.
+          Architecto ad voluptatibus illo ex, sed possimus fugit reiciendis
+          dolorem itaque eius sit nobis minima distinctio nihil blanditiis
+          perspiciatis.
+        </p>
+        <p>
+          Maiores esse in amet laboriosam saepe. Porro doloribus dolore mollitia
+          delectus voluptas explicabo exercitationem amet quaerat soluta aliquid
+          magnam corrupti expedita, fugit qui iure animi alias tempora nostrum.
+          Excepturi modi veniam facilis porro laudantium corporis.
+        </p>
+        <p>
+          Impedit quae optio officiis nisi quis aspernatur, perspiciatis minus
+          odit eum omnis? Hic soluta doloribus consequatur aliquam voluptates?
+          Culpa maiores quidem quos omnis dolore aliquid eaque rem, minima
+          doloribus non, ut odit maxime, repellendus veritatis.
+        </p>
+        <p>
+          Vitae, iste, quasi a vero quidem repudiandae voluptas fuga eius
+          suscipit ea nam nulla libero labore dolorem tempore asperiores
+          aliquam. Eveniet corporis beatae placeat perspiciatis omnis. Officia
+          excepturi nesciunt nihil magni quia molestias odit impedit!
+        </p>
+        <p>
+          Officia reprehenderit a asperiores iste earum nemo ex tempora sint
+          odio nobis optio eveniet, perferendis illum blanditiis saepe fugit
+          magnam dignissimos ullam sapiente esse, nisi praesentium. Facilis
+          asperiores dolorum delectus quas! Sapiente harum unde vero!
+        </p>
+      </section>
+    </main>
   </body>
 </html>

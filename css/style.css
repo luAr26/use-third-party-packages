@@ -2,19 +2,24 @@
   --primary-color: rgb(238, 164, 80);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+#carousel-example {
+  width: 100%;
+  max-width: 50rem;
+  height: 30rem;
+  margin: 5rem auto;
 }
 
-html {
-  font-size: 62.5%;
+#carousel-example img {
+  height: 30rem;
+  object-fit: cover;
 }
 
-body {
-  font-size: 1.6rem;
-  font-family: sans-serif;
+.newsletter-signup {
+  max-width: 40rem;
+  margin: 4rem auto;
+}
+
+#dummy-text {
+  max-width: 50rem;
+  margin: 0 auto;
 }
